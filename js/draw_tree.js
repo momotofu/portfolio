@@ -1,10 +1,6 @@
-import turtle
+(() => { window.turtle_code =  
+`import turtle
 from random import randint
-
-def open_window():
-    window = turtle.Screen()
-    window.bgcolor("white")
-    return window
 
 def draw_tree(x, y, distance, degrees):
     stroke_color = "#ffd600"
@@ -94,24 +90,4 @@ def draw_tree(x, y, distance, degrees):
         offshoot.circle(3)
         offshoot.end_fill()
 
-def draw_circle(x_pos, y_pos, radius):
-    chris = turtle.Turtle()
-    chris.hideturtle()
-    chris.color("green")
-    chris.speed(20)
-
-    chris.penup()
-    chris.setpos((x_pos, y_pos))
-    chris.pendown()
-    chris.circle(radius)
-
-    if (radius > 8):
-        draw_circle(x_pos + radius /2, y_pos + radius/2, radius/2)
-        draw_circle(x_pos - radius /2, y_pos + radius/2, radius/2)
-        draw_circle(x_pos + radius/2, y_pos - radius/2, radius/2)
-        draw_circle(x_pos + radius/2, y_pos + radius/2, radius/2)
-
-window = open_window()
-draw_tree(0, -400, 250, 60)
-# draw_circle(0, 0, 160)
-window.exitonclick()
+draw_tree(0, -400, 250, 60)` })();
