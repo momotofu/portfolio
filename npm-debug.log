@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchOtherPackageData skulpt@git://https://github.com/skulpt/skulpt.git
+20 silly cache add args [ 'skulpt@git://https://github.com/skulpt/skulpt.git', null ]
+21 verbose cache add spec skulpt@git://https://github.com/skulpt/skulpt.git
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'skulpt@git://https://github.com/skulpt/skulpt.git',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'skulpt',
+22 silly cache add   rawSpec: 'git://https://github.com/skulpt/skulpt.git',
+22 silly cache add   spec: 'git://https://github.com/skulpt/skulpt.git',
+22 silly cache add   type: 'git' }
+23 verbose addRemoteGit caching git://https://github.com/skulpt/skulpt.git
+24 silly tryClone cloning git://https://github.com/skulpt/skulpt.git via git://https://github.com/skulpt/skulpt.git
+25 verbose tryClone git-https-github-com-skulpt-skulpt-git-8fc5d1e5 not in flight; caching
+26 verbose correctMkdir /Users/christopherreece/.npm/_git-remotes correctMkdir not in flight; initializing
+27 info git [ 'clone',
+27 info git   '--template=/Users/christopherreece/.npm/_git-remotes/_templates',
+27 info git   '--mirror',
+27 info git   'git://https://github.com/skulpt/skulpt.git',
+27 info git   '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5' ]
+28 error git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5: Cloning into bare repository '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5'...
+28 error git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5: fatal: Unable to look up https (port 9418) (nodename nor servname provided, or not known)
+29 silly fetchPackageMetaData Error: Command failed: git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5
+29 silly fetchPackageMetaData Cloning into bare repository '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5'...
+29 silly fetchPackageMetaData fatal: Unable to look up https (port 9418) (nodename nor servname provided, or not known)
+29 silly fetchPackageMetaData
+29 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:207:12)
+29 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+29 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+29 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:852:16)
+29 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:323:11)
+29 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+29 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+29 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:492:12)
+29 silly fetchPackageMetaData  error for skulpt@git://https://github.com/skulpt/skulpt.git { Error: Command failed: git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5
+29 silly fetchPackageMetaData Cloning into bare repository '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5'...
+29 silly fetchPackageMetaData fatal: Unable to look up https (port 9418) (nodename nor servname provided, or not known)
+29 silly fetchPackageMetaData
+29 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:207:12)
+29 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+29 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+29 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:852:16)
+29 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:323:11)
+29 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+29 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+29 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:492:12)
+29 silly fetchPackageMetaData   killed: false,
+29 silly fetchPackageMetaData   code: 128,
+29 silly fetchPackageMetaData   signal: null,
+29 silly fetchPackageMetaData   cmd: 'git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5' }
+30 silly rollbackFailedOptional Starting
+31 silly rollbackFailedOptional Finishing
+32 silly runTopLevelLifecycles Starting
+33 silly runTopLevelLifecycles Finishing
+34 silly install printInstalled
+35 verbose stack Error: Command failed: git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5
+35 verbose stack Cloning into bare repository '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5'...
+35 verbose stack fatal: Unable to look up https (port 9418) (nodename nor servname provided, or not known)
+35 verbose stack
+35 verbose stack     at ChildProcess.exithandler (child_process.js:207:12)
+35 verbose stack     at emitTwo (events.js:106:13)
+35 verbose stack     at ChildProcess.emit (events.js:191:7)
+35 verbose stack     at maybeClose (internal/child_process.js:852:16)
+35 verbose stack     at Socket.<anonymous> (internal/child_process.js:323:11)
+35 verbose stack     at emitOne (events.js:96:13)
+35 verbose stack     at Socket.emit (events.js:188:7)
+35 verbose stack     at Pipe._handle.close [as _onclose] (net.js:492:12)
+36 verbose cwd /Users/christopherreece/Documents/GitHub/portfolio
+37 error Darwin 16.7.0
+38 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+39 error node v6.2.2
+40 error npm  v3.9.5
+41 error code 128
+42 error Command failed: git clone --template=/Users/christopherreece/.npm/_git-remotes/_templates --mirror git://https://github.com/skulpt/skulpt.git /Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5
+42 error Cloning into bare repository '/Users/christopherreece/.npm/_git-remotes/git-https-github-com-skulpt-skulpt-git-8fc5d1e5'...
+42 error fatal: Unable to look up https (port 9418) (nodename nor servname provided, or not known)
+43 error If you need help, you may report this error at:
+43 error     <https://github.com/npm/npm/issues>
+44 verbose exit [ 1, true ]
