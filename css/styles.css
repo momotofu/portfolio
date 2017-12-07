@@ -1,3 +1,64 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+main {
+  padding-top: 60px;
+}
+
 .hero-image {
   max-width: 100%;
+}
+
+.nav {
+  background: #2b2734;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav:before {
+  content: '';
+  background: #2b2734;
+  width: 10000px;
+  height: 60px;
+  z-index: -1;
+  position: absolute;
+  left: -1000px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 17px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo > img {
+  max-width: 27px;
+  padding: 0;
+}
+
+.title {
+  color: white;
+}
+
+.title-main {
+  font-size: 24px;
+}
+
+.title-sub {
+  font-size: 12px;
 }
