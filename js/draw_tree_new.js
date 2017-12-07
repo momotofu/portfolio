@@ -6,7 +6,7 @@ leaf_colors = ["#F3E5F5", "#FCE4EC", "#F8BBD0", "#FFEBEE", "#FFCDD2"]
 wood_color = "#795548"
 
 def branch(t, length, angle, scale):
-    if length < 3:
+    if length < 4:
         t.color(leaf_colors[randint(0,4)])
         t.begin_fill()
         t.circle(randint(1,3))
@@ -17,9 +17,10 @@ def branch(t, length, angle, scale):
     t.pensize(int(2.1 * length * scale * .07))
     t.forward(length)
     t.left(angle + random_degree)
-    branch(t, (randint(-15 - (length // 4), 21) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.05)
+    branch(t, (randint(-15, 20) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.05)
     t.right(angle * 2 + random_degree)
-    branch(t, (randint(-20 - (length // 2), 23) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.04)
+    branch(t, (randint(-15 - (length // 4), 20) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.04)
+    branch(t, randint(-25, 10) * scale, randint(0, 45), scale)
     t.left(angle + 180)
     t.forward(length)
     t.left(180)
