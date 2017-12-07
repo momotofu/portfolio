@@ -6,7 +6,7 @@ leaf_colors = ["#F3E5F5", "#FCE4EC", "#F8BBD0", "#FFEBEE", "#FFCDD2"]
 wood_color = "#795548"
 
 def branch(t, length, angle, scale):
-    if length < 2:
+    if length < 3:
         t.color(leaf_colors[randint(0,4)])
         t.begin_fill()
         t.circle(randint(1,3))
@@ -17,20 +17,19 @@ def branch(t, length, angle, scale):
     t.pensize(int(2.1 * length * scale * .07))
     t.forward(length)
     t.left(angle + random_degree)
-    branch(t, (randint(-15 - (length // 3), 21) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.05)
+    branch(t, (randint(-15 - (length // 4), 21) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.05)
     t.right(angle * 2 + random_degree)
-    branch(t, (randint(-20 - (length // 4), 23) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.04)
+    branch(t, (randint(-20 - (length // 2), 23) + length) * scale, angle + randint(-5, 5) * scale, scale - 0.04)
     t.left(angle + 180)
     t.forward(length)
     t.left(180)
 
 def make_drawing():
-    # turtle.tracer(25, None)
-    t = turtle.Turtle();
+    t = turtle.Turtle()
+    t.hideturtle()
     t.penup()
     t.setpos(0, -200)
     t.pendown()
-    t.shape("turtle")
     t.color(wood_color)
     t.speed(0)
     t.left(90)
