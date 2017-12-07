@@ -1,0 +1,26 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "show case code",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momotofu/portfolio.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Python",
+    "Skulpt.js",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Christopher Reece",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momotofu/portfolio/issues"
+  },
+  "homepage": "https://github.com/momotofu/portfolio#readme"
+}
