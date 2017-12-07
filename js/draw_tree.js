@@ -1,5 +1,6 @@
 (() => { window.turtle_code =  
-`import turtle
+`
+import turtle
 from random import randint
 
 def draw_tree(x, y, distance, degrees):
