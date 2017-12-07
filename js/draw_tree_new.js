@@ -2,14 +2,14 @@
 `import turtle
 from random import randint
 
-leaf_colors = ["#F9A825", "#FBC02D", "#FDD835", "#FF6F00", "#FFC107"]
+leaf_colors = ["#F3E5F5", "#FCE4EC", "#F8BBD0", "#FFEBEE", "#FFCDD2"]
 wood_color = "#795548"
 
 def branch(t, length, angle, scale):
     if length < 2:
         t.color(leaf_colors[randint(0,4)])
         t.begin_fill()
-        t.circle(randint(2,3))
+        t.circle(randint(1,3))
         t.end_fill()
         t.color(wood_color)
         return
