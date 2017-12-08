@@ -25,7 +25,7 @@ def branch(t, length, angle, scale):
     t.forward(length)
     t.left(180)
 
-def make_drawing():
+def draw_tree():
     t = turtle.Turtle()
     t.hideturtle()
     t.penup()
@@ -36,4 +36,4 @@ def make_drawing():
     t.left(90)
     branch(t, 100, 20, 0.8)
 
-make_drawing()`})();
+draw_tree()`})();
