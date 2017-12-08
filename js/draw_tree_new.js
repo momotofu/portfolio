@@ -35,6 +35,6 @@ def draw_tree():
     t.color(wood_color)
     t.speed(0)
     t.left(90)
-    branch(t, 100, 20, ${window.visualViewport.width > 470 ? 0.8 : 0.71})
+    branch(t, 100, 20, ${window.visualViewport.width > 470 ? 0.8 : 0.68})
 
 draw_tree()`})();
