@@ -30,7 +30,7 @@ def draw_tree():
     t = turtle.Turtle()
     t.hideturtle()
     t.penup()
-    t.setpos(${window.visualViewport.width > 470 ? 0 : -210}, ${window.visualViewport.width > 470 ? -300 : -250})
+    t.setpos(0, ${window.visualViewport.width > 470 ? -300 : -250})
     t.pendown()
     t.color(wood_color)
     t.speed(0)

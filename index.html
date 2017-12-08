@@ -26,8 +26,17 @@
     </nav>
     <main class="container">
       <div class="row">
-        <figure class="col" id="hero-canvas">
+        <figure class="col-12 hero-canvas" id="hero-canvas">
         </figure>
+        <div class="col-12">
+          <h5>Sakura Tree</h5>
+          <p>An example of recursion written in python</p>
+          <h7>
+            <a href="https://github.com/momotofu/python-playground/blob/master/archive/draw_natural_tree_simple.py" target="_blank">
+              source code
+            </a>
+          </h7>
+        </div>
           <!-- <img class="hero-image" src="img/recursive-tree.png" alt=""> !-->
       </div>
       <section class="row">
@@ -64,30 +73,6 @@
     <footer class="container">
       <p>©Copyright 2018 by Christopher Reece. All rights reserved.</p>
     </footer>
-    <script type="text/javascript"> 
-      function builtinRead(x) {
-          if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
-                  throw "File not found: '" + x + "'";
-          return Sk.builtinFiles["files"][x];
-      }
-
-      function runit() { 
-        let prog = window.turtle_code;
-        Sk.configure({width:800, height:400, read:builtinRead}); 
-        (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'hero-canvas';
-        Sk.TurtleGraphics.height=600;
-        Sk.TurtleGraphics.width=1140;
-       let myPromise = Sk.misceval.asyncToPromise(function() {
-           return Sk.importMainWithBody("<stdin>", false, prog, true);
-       });
-       myPromise.then(function(mod) {
-           console.log('success');
-       },
-           function(err) {
-           console.log(err.toString());
-       });
-      }
-      // document.onload = runit();
-    </script>
+    <script type="text/javascript" src="js/draw_tree_setup.js"></script>
   </body>
 </html>

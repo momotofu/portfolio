@@ -9,7 +9,7 @@ function runit() {
 	Sk.configure({read:builtinRead}); 
 	(Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'hero-canvas';
 	Sk.TurtleGraphics.height=(window.visualViewport.width > 470 ? 600 : 500);
-	Sk.TurtleGraphics.width=800;
+  Sk.TurtleGraphics.width=(window.visualViewport.width> 1140 ? 1140 : window.visualViewport.width);
 	let myPromise = Sk.misceval.asyncToPromise(function() {
 		return Sk.importMainWithBody("<stdin>", false, prog, true);
 	});
