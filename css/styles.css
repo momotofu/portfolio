@@ -55,6 +55,10 @@ main {
   cursor: pointer;
   animation-name: spin;
   animation-duration: 1000ms;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
   opacity: 0.8;
 }
 
@@ -68,10 +72,11 @@ main {
 }
 
 .title {
-  color: white;
+  color: #fffc69;
 }
 
 .title-main {
+  color: #fff;
   font-size: 24px;
   margin-bottom: 3px;
   margin-top: 5px;
