@@ -53,6 +53,13 @@ main {
 
 .logo:hover {
   cursor: pointer;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.5;
 }
 
 .logo > img {
@@ -100,4 +107,19 @@ main {
   position: absolute;
   bottom: 0;
   left: -1000px;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
