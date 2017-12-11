@@ -67,3 +67,31 @@ main {
 .title-sub {
   font-size: 12px;
 }
+
+.tile-img {
+  width: 100%;
+  max-width: 380px !important;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #2b2734;
+}
+
+.footer {
+  min-height: 156px;
+  background: #2b2734;
+  color: #fff;
+  align-items: flex-end;
+  position: relative;
+  display: flex;
+}
+.footer:before {
+  content: '';
+  background: #2b2734;
+  width: 10000px;
+  min-height: 156px;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: -1000px;
+}
