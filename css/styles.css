@@ -16,6 +16,10 @@ main {
   max-width: 100%;
 }
 
+.hero-info {
+  max-width: 700px;
+}
+
 .hero-canvas > canvas:nth-of-type(2) {
   margin:auto !important;
   margin-top: -600px !important;
