@@ -4,10 +4,10 @@ function builtinRead(x) {
 	return Sk.builtinFiles["files"][x];
 }
 
-function runit() { 
+function runit() {
   let canvas = document.getElementById('hero-canvas');
 	let prog = window.turtle_code;
-	Sk.configure({read:builtinRead}); 
+	Sk.configure({read:builtinRead});
 	(Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'hero-canvas';
 	Sk.TurtleGraphics.height=(window.visualViewport.width > 470 ? 600 : 500);
   Sk.TurtleGraphics.width=canvas.clientWidth;
