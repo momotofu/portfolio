@@ -55,10 +55,6 @@ main {
   cursor: pointer;
   animation-name: spin;
   animation-duration: 1000ms;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 1000ms;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 1000ms;
   opacity: 0.8;
 }
 
@@ -110,16 +106,6 @@ main {
   position: absolute;
   bottom: 0;
   left: -1000px;
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spin {
