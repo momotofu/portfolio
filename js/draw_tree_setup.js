@@ -5,11 +5,12 @@ function builtinRead(x) {
 }
 
 function runit() { 
+  let canvas = document.getElementById('hero-canvas');
 	let prog = window.turtle_code;
 	Sk.configure({read:builtinRead}); 
 	(Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'hero-canvas';
 	Sk.TurtleGraphics.height=(window.visualViewport.width > 470 ? 600 : 500);
-  Sk.TurtleGraphics.width=(window.visualViewport.width> 1140 ? 1140 : window.visualViewport.width);
+  Sk.TurtleGraphics.width=canvas.clientWidth;
 	let myPromise = Sk.misceval.asyncToPromise(function() {
 		return Sk.importMainWithBody("<stdin>", false, prog, true);
 	});
