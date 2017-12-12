@@ -7,6 +7,7 @@ A static and responsive website created with the intent to honestly convey my sk
 
 If you're using mac or linux open the terminal and type:
 ```bash
-cd path-to-progect
+git clone https://github.com/momotofu/portfolio.git
+cd path-to-project
 open index.html
 ```
