@@ -89,9 +89,6 @@ main {
 
 .tile-img {
   width: 100%;
-  max-width: 380px !important;
-  height: 230px;
-  overflow: hidden;
   border-radius: 3px;
   border: 1px solid #2b2734;
 }
@@ -128,17 +125,4 @@ main {
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
-}
-
-@media screen and (max-width: 768px) {
-  .tile-img {
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 572px) {
-  .tile-img {
-    width: 100%;
-    height: 230px;
-  }
 }
