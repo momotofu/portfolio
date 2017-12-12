@@ -84,6 +84,7 @@ main {
 
 .title-sub {
   font-size: 12px;
+  text-align: right;
 }
 
 .tile-img {
@@ -127,4 +128,17 @@ main {
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
+}
+
+@media screen and (max-width: 768px) {
+  .tile-img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .tile-img {
+    width: 100%;
+    height: 230px;
+  }
 }
