@@ -110,6 +110,26 @@ main {
   min-height: 156px;
 }
 
+.footer-copyright {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.icon-container {
+  padding: 16px;
+  padding-right: 0;
+  color: #fff;
+}
+
+.icon-container:hover {
+  color: #fffc7d;
+  opacity: 0.8;
+}
+
+.icon-container:active {
+  opacity: 0.5;
+}
+
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
