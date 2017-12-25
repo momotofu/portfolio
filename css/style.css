@@ -26,6 +26,8 @@ main {
   margin-top: -600px !important;
 }
 .nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .nav-background {
@@ -35,13 +37,19 @@ main {
   z-index: 10;
 }
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 17px;
 }
 .logo:hover {
   cursor: pointer;
+  -webkit-animation-name: spin;
   animation-name: spin;
+  -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
   opacity: 0.8;
 }
