@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/momotofu/portfolio/issues"
   },
-  "homepage": "https://github.com/momotofu/portfolio#readme"
+  "homepage": "https://github.com/momotofu/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.6.0"
+  }
 }
