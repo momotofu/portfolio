@@ -26,6 +26,7 @@
   "homepage": "https://github.com/momotofu/portfolio#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-stylus": "^2.6.0"
   }
 }
