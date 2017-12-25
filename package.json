@@ -4,7 +4,8 @@
   "description": "Honestly show off my skills",
   "main": "index.js",
   "scripts": {
-    "build": "gulp"
+    "dev": "gulp",
+    "build": "styles"
   },
   "repository": {
     "type": "git",
