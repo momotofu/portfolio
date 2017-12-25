@@ -1,5 +1,5 @@
 html {
-  overflow: hidden;
+  overflow: hiden;
   height: 100%;
 }
 body {
@@ -92,36 +92,4 @@ main {
 }
 .icon-container:active {
   opacity: 0.5;
-}
-@-moz-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
