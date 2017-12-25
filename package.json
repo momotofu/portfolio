@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Honestly show of my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momotofu/portfolio.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "Gulp",
+    "Skulpt"
+  ],
+  "author": "Christopher Reece",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momotofu/portfolio/issues"
+  },
+  "homepage": "https://github.com/momotofu/portfolio#readme"
+}
