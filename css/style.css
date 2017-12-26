@@ -25,12 +25,12 @@ main {
   margin: auto !important;
   margin-top: -600px !important;
 }
-.nav {
+.nav__content {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.nav-background {
+.nav {
   background: #2b2734;
   height: 60px;
   position: fixed;
