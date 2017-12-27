@@ -25,32 +25,33 @@ main
   margin auto !important
   margin-top  -600px !important
 
-.nav__content 
-  justify-content space-between
-
 .nav 
   background #2b2734
   height 60px
   position fixed
   z-index 10
+  
+.nav__content 
+  justify-content space-between
+  display flex
 
 .logo 
   display flex
   align-items center
   padding 17px
-
-.logo:hover 
   cursor pointer
-  animation-name spin
-  animation-duration 1000ms
-  opacity 0.8
 
-.logo:active 
-  opacity 0.5
-
-.logo > img 
+.logo__image
   max-width 27px
   padding 0
+
+.logo__image:hover 
+  opacity 0.8
+  animation-name spin
+  animation-duration 1000ms
+
+.logo__image:active 
+  opacity 0.5
 
 .title 
   color #fffc69
@@ -94,5 +95,7 @@ main
   opacity 0.5
 
 @keyframes spin 
-    from transform rotate(0deg)
-    to transform rotate(360deg)
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)
