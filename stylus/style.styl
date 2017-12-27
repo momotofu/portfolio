@@ -31,9 +31,21 @@ main
   position fixed
   z-index 10
   
-.nav__content 
-  justify-content space-between
-  display flex
+  &__content 
+    justify-content space-between
+    display flex
+
+  &__title 
+    color #fffc69
+
+  &__title-main 
+    color #fff
+    font-size 24px
+    margin 5px 0 3px
+
+  &__title-sub 
+    font-size 12px
+    text-align right
 
 .logo 
   display flex
@@ -52,18 +64,6 @@ main
 
 .logo__image:active 
   opacity 0.5
-
-.title 
-  color #fffc69
-
-.title-main 
-  color #fff
-  font-size 24px
-  margin 5px 0 3px
-
-.title-sub 
-  font-size 12px
-  text-align right
 
 .tile-img 
   width 100%
