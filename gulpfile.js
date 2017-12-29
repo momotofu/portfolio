@@ -1,13 +1,19 @@
-var gulp = require('gulp')
-var stylus = require('gulp-stylus')
-var autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp')
+const stylus = require('gulp-stylus')
+const autoprefixer = require('gulp-autoprefixer')
+const browserSync = require('browser-sync').create()
 
-gulp.task('default', function() {
-  var watcher = gulp.watch('./stylus/*', ['styles'])
+gulp.task('serve', ['styles'], function() {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  })
 
-  watcher.on('change', function(event) {
+  gulp.watch('./stylus/*', ['styles']).on('change', function(event) {
     console.log(`File ${event.path} was ${event.type}, running tasks...`)
   })
+  gulp.watch('./index.html').on('change', browserSync.reload)
 })
 
 gulp.task('styles', function() {
@@ -18,4 +24,5 @@ gulp.task('styles', function() {
       cascade: false
     }))
     .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream())
 });
